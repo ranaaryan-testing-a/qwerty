@@ -1,0 +1,212 @@
+/* tools.css - Specific styles for the tools pages */
+
+/* Tool Page Layout */
+.tool-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.tool-header .card-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.tool-header p {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* Tool Workspace */
+.tool-workspace {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+/* Form Elements */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 10px var(--accent-blue-glow);
+}
+
+/* Scientific Calculator Styles */
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.calc-display {
+  grid-column: span 4;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  min-height: 80px;
+}
+.calc-btn {
+  background: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--font-mono);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.calc-btn:hover {
+  background: rgba(255,255,255,0.1);
+}
+.calc-btn.operator {
+  color: var(--accent-violet);
+  background: rgba(139, 92, 246, 0.1);
+}
+.calc-btn.action {
+  color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.1);
+}
+.calc-btn.equals {
+  grid-column: span 2;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+  color: white;
+  border: none;
+}
+
+/* Result Box */
+.result-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px dashed var(--accent-blue);
+  border-radius: 8px;
+  text-align: center;
+}
+.result-box h4 {
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+}
+.result-value {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Pomodoro Timer */
+.pomodoro-display {
+  font-family: var(--font-mono);
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-shadow: 0 0 20px var(--accent-violet-glow);
+}
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Checkboxes for Formula Generator */
+.checkbox-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 1rem;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.checkbox-label:hover {
+  border-color: var(--accent-blue);
+}
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-violet);
+}
+
+/* Fake Search & Filters (UI Only) */
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  display: flex;
+}
+.search-bar input {
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid var(--border-color);
+  background: rgba(17,24,39,0.8);
+  color: #fff;
+  font-family: var(--font-main);
+}
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+.search-bar .btn {
+  border-radius: 0 30px 30px 0;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+.filter-tab {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.filter-tab:hover, .filter-tab.active {
+  background: var(--accent-blue);
+  color: #fff;
+  border-color: var(--accent-blue);
+}
+
+@media (max-width: 600px) {
+  .calc-grid { gap: 5px; }
+  .calc-btn { padding: 0.75rem; font-size: 1rem; }
+  .checkbox-list { grid-template-columns: 1fr; }
+  .pomodoro-display { font-size: 4rem; }
+}

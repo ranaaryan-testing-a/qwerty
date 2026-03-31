@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free JEE Tool Hub — 75+ Calculators for JEE Mains & Advanced 2025. No signup, no ads, just reliable problem solving tools for Mathematics, Physics, and Chemistry.">
+    <title>JEE Tool Hub — The Ultimate Toolkit for JEE 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+        <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3b82f6"/>
+            <stop offset="1" stop-color="#8b5cf6"/>
+        </linearGradient>
+    </defs>
+</svg>
+        <span>JEE Tool Hub</span>
+    </a>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+            <div class="nav-links">
+                <div class="streak-badge" id="streak-badge" style="display: none; align-items: center; gap: 4px; background: rgba(255,165,0,0.1); color: #ff9d00; padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
+                    🔥 <span id="streak-count">0</span> Day Streak
+                </div>
+                <a href="index.html">Home</a>
+                <a href="tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Depth Layer -->
+    <div class="bg-layer">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Hero Section -->
+    <section class="hero reveal">
+        <div class="hero-glow"></div>
+        <div class="floating-symbols" id="parallax-symbols">
+            <div class="symbol">∫</div>
+            <div class="symbol">π</div>
+            <div class="symbol">Σ</div>
+            <div class="symbol">√</div>
+            <div class="symbol">∞</div>
+            <div class="symbol">Δ</div>
+        </div>
+        <div class="container hero-content">
+            <p class="student-hook" style="color: var(--text-muted); font-weight: 500; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1rem;">Built by a student, for students preparing for JEE</p>
+            <h1 class="gradient-text">All-in-one toolkit for JEE aspirants to study smarter, not harder.</h1>
+            <p>75+ powerful tools to solve, revise, track, and dominate JEE preparation.</p>
+            <div class="hero-buttons">
+                <a href="tools.html" class="btn btn-primary interactive-link">Start Solving →</a>
+                <a href="#featured" class="btn btn-secondary interactive-link">Explore Tools</a>
+            </div>
+
+            <!-- Trust Layer -->
+            <div class="trust-layer stagger-reveal">
+                <p class="trust-title">Trusted by 1000+ JEE Aspirants</p>
+                <div class="trust-badges">
+                    <span class="trust-badge">⚡ 75+ Tools</span>
+                    <span class="trust-badge">📚 All Subjects Covered</span>
+                    <span class="trust-badge">🎉 Free Forever</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="container reveal">
+        <div class="stats glass-panel">
+            <div class="stat-item stagger-item">
+                <h3>75+</h3>
+                <p>Tools</p>
+            </div>
+            <div class="stat-item stagger-item">
+                <h3>100%</h3>
+                <p>Free</p>
+            </div>
+            <div class="stat-item stagger-item">
+                <h3>0</h3>
+                <p>Signups</p>
+            </div>
+            <div class="stat-item stagger-item">
+                <h3>∞</h3>
+                <p>Offline Use</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today's Focus Tool -->
+    <section class="section container reveal" style="padding-top: 2rem;">
+        <h2 class="section-title">Today's Focus</h2>
+        <div class="card glass-panel focus-card stagger-item" style="display: flex; gap: 2rem; align-items: center; padding: 2.5rem; background: linear-gradient(145deg, rgba(88, 101, 242, 0.1), rgba(139, 92, 246, 0.05)); border: 1px solid rgba(139, 92, 246, 0.2);">
+            <div class="focus-content" style="flex: 1;">
+                <div class="card-tags" style="margin-bottom: 1rem;"><span class="tag tag-recommended" style="background: var(--accent-violet); color: white;">Daily Challenge</span></div>
+                <h3 style="font-size: 2.5rem; margin-bottom: 1rem; background: linear-gradient(90deg, #fff, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mistake Tracker</h3>
+                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.6;">Analyze your errors, identify weak topics systematically, and stop losing marks on silly mistakes. The most crucial habit for a top rank.</p>
+                <a href="tools/mistake-tracker.html" class="btn btn-primary" style="display: inline-block;">Open Tracker →</a>
+            </div>
+            <div class="focus-icon" style="font-size: 6rem; filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.3)); display: flex; align-items: center; justify-content: center;">🧠</div>
+        </div>
+    </section>
+
+    <!-- Top 5 Core Tools -->
+    <section id="featured" class="section container reveal">
+        <h2 class="section-title">Essential Daily Tools</h2>
+        <div class="grid stagger-group">
+            <a href="tools/rank-predictor.html" class="card glass-panel stagger-item">
+                <div class="card-tags"><span class="tag tag-all">Featured</span></div>
+                <div class="card-icon">🏆</div>
+                <h3 class="card-title">JEE Rank Predictor</h3>
+                <p class="card-desc">Estimate your percentile and expected rank based on historical data.</p>
+                <span class="card-btn">Open Tool</span>
+            </a>
+            <a href="tools/marks-calculator.html" class="card glass-panel stagger-item">
+                <div class="card-tags"><span class="tag tag-all">Featured</span></div>
+                <div class="card-icon">💯</div>
+                <h3 class="card-title">Marks Calculator</h3>
+                <p class="card-desc">Quickly calculate your final score from +4/-1 marking scheme.</p>
+                <span class="card-btn">Open Tool</span>
+            </a>
+            <a href="tools/pomodoro-timer.html" class="card glass-panel stagger-item">
+                <div class="card-tags"><span class="tag tag-rev">Focus</span></div>
+                <div class="card-icon">⏱️</div>
+                <h3 class="card-title">Study Timer</h3>
+                <p class="card-desc">Maximize your focus during intense JEE preparation sessions.</p>
+                <span class="card-btn">Open Tool</span>
+            </a>
+            <a href="tools/formula-sheet-generator.html" class="card glass-panel stagger-item">
+                <div class="card-tags"><span class="tag tag-rev">Revision</span></div>
+                <div class="card-icon">📝</div>
+                <h3 class="card-title">Formula Sheet</h3>
+                <p class="card-desc">Create custom formula cheat sheets for targeted chapter revisions.</p>
+                <span class="card-btn">Open Tool</span>
+            </a>
+            <a href="tools/mistake-tracker.html" class="card glass-panel stagger-item">
+                <div class="card-tags"><span class="tag tag-rev">Analysis</span></div>
+                <div class="card-icon">🧠</div>
+                <h3 class="card-title">Mistake Tracker</h3>
+                <p class="card-desc">Track and categorize your errors to ensure continuous improvement.</p>
+                <span class="card-btn">Open Tool</span>
+            </a>
+            <a href="tools.html" class="card glass-panel stagger-item" style="border: 1px dashed rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: transparent;">
+                <div class="card-icon" style="opacity: 0.5; margin-bottom: 0.5rem;">🚀</div>
+                <h3 class="card-title" style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 0;">More tools coming soon...</h3>
+                <span class="card-btn" style="margin-top: 1.5rem;">Explore All 75+ Tools</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section container reveal">
+        <h2 class="section-title">Explore by Subject</h2>
+        <div class="categories-list stagger-group">
+            <a href="tools.html#math" class="category-item stagger-item">
+                <span class="cat-name">Mathematics</span>
+                <span class="cat-count">20 tools</span>
+            </a>
+            <a href="tools.html#physics" class="category-item stagger-item">
+                <span class="cat-name">Physics</span>
+                <span class="cat-count">15 tools</span>
+            </a>
+            <a href="tools.html#chemistry" class="category-item stagger-item">
+                <span class="cat-name">Chemistry</span>
+                <span class="cat-count">15 tools</span>
+            </a>
+            <a href="tools.html#ps" class="category-item stagger-item">
+                <span class="cat-name">Problem Solving</span>
+                <span class="cat-count">7 tools</span>
+            </a>
+            <a href="tools.html#rev" class="category-item stagger-item">
+                <span class="cat-name">Revision & Productivity</span>
+                <span class="cat-count">11 tools</span>
+            </a>
+            <a href="tools.html#util" class="category-item stagger-item">
+                <span class="cat-name">Core Utilities</span>
+                <span class="cat-count">7 tools</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section container reveal">
+        <h2 class="section-title">Why Use JEE Tool Hub?</h2>
+        <div class="grid stagger-group">
+            <div class="card glass-panel stagger-item">
+                <h3 class="card-title">No Login Required</h3>
+                <p class="card-desc">We respect your time. Jump straight into solving problems without handing over your email or phone number. Complete privacy.</p>
+            </div>
+            <div class="card glass-panel stagger-item">
+                <h3 class="card-title">Lightning Fast</h3>
+                <p class="card-desc">Built purely with HTML and CSS, our platform loads instantly on mobile and desktop, even on 2G connections.</p>
+            </div>
+            <div class="card glass-panel stagger-item">
+                <h3 class="card-title">Works Offline</h3>
+                <p class="card-desc">Save the pages or use cached resources. Every calculator runs natively in your browser with no server calls.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO & FAQ -->
+    <section class="container seo-content reveal">
+        <h2>About JEE Tool Hub</h2>
+        <p>Preparing for the Joint Entrance Examination (JEE) Mains and Advanced is a grueling journey that demands impeccable time management, robust conceptual understanding, and swift problem-solving skills. The "JEE Tool Hub" platform was meticulously crafted to serve as an uncompromising daily companion for engineering aspirants. With over 75 specialized calculators, formula sheets, and analytical utilities covering the entire Physics, Chemistry, and Mathematics curriculum, students save hundreds of hours normally lost to manual arithmetic or hunting down disparate resources.</p>
+        <p>This holistic directory focuses purely on utility. Unburdened by bloated libraries or invasive trackers, the platform delivers a premium, distraction-free environment utilizing modern glassmorphism aesthetics. Whether you are cross-referencing stoichiometry with the Mole Calculator, deriving rotational mechanics constraints, or employing the Pomodoro timer during a grueling mock test, these resources are engineered to elevate your academic edge effortlessly.</p>
+
+        <h3 style="margin: 2rem 0 1rem;">Frequently Asked Questions</h3>
+        <div class="faq-item">
+            <h4>Are these calculators allowed in the actual JEE Exam?</h4>
+            <p>No. Calculators are strictly prohibited in JEE Main and Advanced. These tools are meant for homework, verification of your manual calculations during practice, and exploring complex conceptual graphs.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Does this work on mobile devices?</h4>
+            <p>Absolutely. The entire system is built with a responsive, mobile-first approach. It runs smoothly on any smartphone, tablet, or desktop browser.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Is it really 100% free?</h4>
+            <p>Yes. There are no paywalls, premium subscriptions, or hidden ad networks. Knowledge and the tools to hone it should be universally accessible.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container reveal">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3b82f6"/>
+                                <stop offset="1" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>JEE Tool Hub</span>
+                </a>
+                <p class="footer-tagline">Built for serious JEE aspirants.</p>
+                <div class="footer-socials">
+                    <a href="mailto:contact@jeetoolhub.com" class="social-icon" aria-label="Gmail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <a href="index.html">Home</a>
+                <a href="tools.html">Tools Directory</a>
+            </div>
+            <div class="footer-feedback">
+                <h4>Help us improve</h4>
+                <button class="btn btn-secondary feedback-btn" onclick="openFeedbackModal()">Report a Bug / Feedback</button>
+                <p class="trust-text">Actively improving based on student feedback.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 JEE Tool Hub. Built with vanilla web technologies.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>
