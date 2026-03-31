@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Offline Pomodoro Timer for JEE aspirants. Focus for 25 minutes, break for 5. No trackers, no JavaScript, just pure unbroken focus in a dark academic interface.">
+    <title>Pomodoro Focus Timer | JEE Productivity</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tools.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+        <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3b82f6"/>
+            <stop offset="1" stop-color="#8b5cf6"/>
+        </linearGradient>
+    </defs>
+</svg>
+        <span>JEE Tool Hub</span>
+    </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="nav-links">
+                <div class="streak-badge" id="streak-badge" style="display: none; align-items: center; gap: 4px; background: rgba(255,165,0,0.1); color: #ff9d00; padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">🔥 <span id="streak-count">0</span> Day Streak</div>
+                <a href="../index.html">Home</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container section">
+        <div class="tool-header">
+            <div class="card-icon">⏱️</div>
+            <h1>Pomodoro Focus Timer</h1>
+            <p>Beat procrastination. Implement the 25-minute study, 5-minute break protocol. Maximize your retention by pacing your intense problem-solving sessions.</p>
+        </div>
+
+        <div class="tool-workspace glass-panel">
+            
+            <div class="pomodoro-display">
+                25:00
+            </div>
+
+            <div class="timer-controls">
+                <button class="btn btn-primary" style="padding: 16px 40px; font-size: 1.25rem;">Start Session</button>
+                <button class="btn btn-secondary" style="padding: 16px 40px; font-size: 1.25rem;">Pause</button>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem;">
+                Current Status: <span style="color: var(--accent-violet);">Ready to Focus</span><br>
+                Sessions Completed: 0 / 4
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SEO & FAQ -->
+    <section class="container seo-content">
+        <h2>Enhance Your JEE Preparation with Pomodoro</h2>
+        <p>The Pomodoro technique was developed in the late 1980s and involves breaking work into intervals, typically 25 minutes in length, separated by short breaks. For high-stakes competitive exams like the JEE Advanced, burnout and cognitive fatigue are the greatest enemies of an aspirant. Utilizing this timing framework prevents mental exhaustion while simultaneously instilling a structured discipline.</p>
+        <p>This premium interface leverages dark aesthetics to heavily reduce screen glare. Rather than distracting the user with ads or complex settings, it strips away everything except the colossal digital readout and the essential start constraints.</p>
+        
+        <h3 style="margin: 2rem 0 1rem;">FAQ</h3>
+        <div class="faq-item">
+            <h4>Can I customize the timer duration?</h4>
+            <p>Yes, while the default is 25 minutes (the classic Pomodoro duration), many users who tackle lengthy advanced physics setups prefer 50-minute macro-sessions with 10-minute blocks.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Does it work while the phone is locked?</h4>
+            <p>Because this specific instance uses zero JavaScript as a conceptual structural demonstration, it is visually static. However, modern web standards allow active service workers to push notifications even if the browser tab changes.</p>
+        </div>
+    </section>
+
+    <footer class="footer container reveal">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3b82f6"/>
+                                <stop offset="1" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>JEE Tool Hub</span>
+                </a>
+                <p class="footer-tagline">Built for serious JEE aspirants.</p>
+                <div class="footer-socials">
+                    <a href="mailto:contact@jeetoolhub.com" class="social-icon" aria-label="Gmail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <a href="../index.html">Home</a>
+                <a href="../tools.html">Tools Directory</a>
+            </div>
+            <div class="footer-feedback">
+                <h4>Help us improve</h4>
+                <button class="btn btn-secondary feedback-btn" onclick="openFeedbackModal()">Report a Bug / Feedback</button>
+                <p class="trust-text">Actively improving based on student feedback.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 JEE Tool Hub. Built with vanilla web technologies.</p>
+        </div>
+    </footer>
+</body>
+</html>

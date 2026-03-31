@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate custom printable PDF formula cheat sheets for JEE Physics, Chemistry, and Mathematics chapters instantly.">
+    <title>Formula Cheat Sheet Generator | Free JEE Tool Hub</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tools.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+        <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3b82f6"/>
+            <stop offset="1" stop-color="#8b5cf6"/>
+        </linearGradient>
+    </defs>
+</svg>
+        <span>JEE Tool Hub</span>
+    </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="nav-links">
+                <div class="streak-badge" id="streak-badge" style="display: none; align-items: center; gap: 4px; background: rgba(255,165,0,0.1); color: #ff9d00; padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">🔥 <span id="streak-count">0</span> Day Streak</div>
+                <a href="../index.html">Home</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container section">
+        <div class="tool-header">
+            <div class="card-icon">📝</div>
+            <h1>Formula Cheat Sheet Generator</h1>
+            <p>Select the exact chapters and subjects you need. We'll instantly format and generate a dense, printable revision sheet packed with all core formulas and concepts.</p>
+        </div>
+
+        <div class="tool-workspace glass-panel">
+            
+            <h3 style="margin-bottom: 1.5rem;">Select Physics Chapters</h3>
+            <div class="checkbox-list">
+                <label class="checkbox-label">
+                    <input type="checkbox" checked>
+                    <span>Kinematics & Motion</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" checked>
+                    <span>Work, Energy, Power</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span>Electrostatics</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span>Optics & Modern Physics</span>
+                </label>
+            </div>
+
+            <h3 style="margin-bottom: 1.5rem;">Select Mathematics Chapters</h3>
+            <div class="checkbox-list">
+                <label class="checkbox-label">
+                    <input type="checkbox" checked>
+                    <span>Calculus (Deriv. & Integrals)</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span>Coordinate Geometry</span>
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span>Algebra & Matrices</span>
+                </label>
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 16px;">Generate Revision Sheet PDF</button>
+
+            <!-- Output section preview -->
+            <div class="result-box" style="margin-top: 2rem;">
+                <h4 style="color: var(--text-main);">Preview: Kinematics</h4>
+                <div style="text-align: left; padding: 1rem; background: rgba(0,0,0,0.5); border-radius: 8px; font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem;">
+                    v = u + at<br>
+                    s = ut + ½ at²<br>
+                    v² = u² + 2as<br><br>
+                    *Generated document will be stylized for A4 printing.*
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SEO & FAQ -->
+    <section class="container seo-content">
+        <h2>Optimize Your Last-Minute Revision</h2>
+        <p>Short notes and concise formula sheets are the definitive weapon in the last 30 days before the JEE examinations. Writing out notes by hand is excellent for initial memory retention, but aggregating all specific edge-cases, dimensional constraints, and specialized shortcuts into one unified reference is incredibly time-consuming. The Formula Generator consolidates our extensive database into customized, high-yield formats.</p>
+        <p>This layout uses CSS custom styled checkboxes rather than browser default, maintaining the premium glassmorphism continuity. While the static frontend restricts live PDF generation, a properly connected backend engine orchestrates exact LaTex rendering from the selected parameters.</p>
+        
+        <h3 style="margin: 2rem 0 1rem;">FAQ</h3>
+        <div class="faq-item">
+            <h4>Can I download it and print it?</h4>
+            <p>Yes. The intended workflow involves selecting the subset of chapters you are currently struggling with, and clicking "Generate". You'll receive a high contrast, printer-friendly PDF completely stripped of the dark UI.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Are the formulas updated for the 2025/2026 syllabus?</h4>
+            <p>We routinely curate the repository to reflect the exact syllabus notifications generated by the NTA and the actual JEE Advanced conducting body.</p>
+        </div>
+    </section>
+
+    <footer class="footer container reveal">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3b82f6"/>
+                                <stop offset="1" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>JEE Tool Hub</span>
+                </a>
+                <p class="footer-tagline">Built for serious JEE aspirants.</p>
+                <div class="footer-socials">
+                    <a href="mailto:contact@jeetoolhub.com" class="social-icon" aria-label="Gmail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <a href="../index.html">Home</a>
+                <a href="../tools.html">Tools Directory</a>
+            </div>
+            <div class="footer-feedback">
+                <h4>Help us improve</h4>
+                <button class="btn btn-secondary feedback-btn" onclick="openFeedbackModal()">Report a Bug / Feedback</button>
+                <p class="trust-text">Actively improving based on student feedback.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 JEE Tool Hub. Built with vanilla web technologies.</p>
+        </div>
+    </footer>
+</body>
+</html>

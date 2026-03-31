@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Mole Calculator for JEE Physical Chemistry. Instantly calculate moles given mass and molar mass offline. No JavaScript processing.">
+    <title>Mole Calculator | JEE Physical Chemistry Tools</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tools.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+        <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3b82f6"/>
+            <stop offset="1" stop-color="#8b5cf6"/>
+        </linearGradient>
+    </defs>
+</svg>
+        <span>JEE Tool Hub</span>
+    </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <div class="nav-links">
+                <div class="streak-badge" id="streak-badge" style="display: none; align-items: center; gap: 4px; background: rgba(255,165,0,0.1); color: #ff9d00; padding: 4px 12px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">🔥 <span id="streak-count">0</span> Day Streak</div>
+                <a href="../index.html">Home</a>
+                <a href="../tools.html">Tools</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container section">
+        <div class="tool-header">
+            <div class="card-icon">🧪</div>
+            <h1>Mole Calculator</h1>
+            <p>Quickly determine the number of moles based on the given mass of a substance and its molar mass. Essential for stoichiometry.</p>
+        </div>
+
+        <div class="tool-workspace glass-panel">
+            
+            <div style="text-align: center; margin-bottom: 2rem; font-family: var(--font-mono); font-size: 1.5rem; color: var(--accent-blue);">
+                Moles (n) = Mass (m) / Molar Mass (M)
+            </div>
+
+            <div class="input-group">
+                <label for="substance-mass">Given Mass (grams)</label>
+                <input type="number" id="substance-mass" class="input-field" value="36" placeholder="e.g. 36">
+            </div>
+            
+            <div class="input-group">
+                <label for="molar-mass">Molar Mass (g/mol)</label>
+                <input type="number" id="molar-mass" class="input-field" value="18.015" placeholder="e.g. 18.015 (for H2O)">
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Calculate Moles</button>
+
+            <!-- Placeholder Results -->
+            <div class="result-box">
+                <h4>Number of Moles (n)</h4>
+                <div class="result-value">
+                    ~ 1.998 mol
+                </div>
+                <p style="color: var(--accent-violet); font-size: 0.9rem; margin-top: 0.5rem; font-family: var(--font-mono);">
+                    Molecules ≈ 1.20 × 10²⁴
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SEO & FAQ -->
+    <section class="container seo-content">
+        <h2>Physical Chemistry: The Mole Concept</h2>
+        <p>The mole concept is the absolute foundation of Physical Chemistry. Before balancing equations, determining empirical formulas, or analyzing complex titration problems, translating macroscopic mass into exact mole counts is mandatory. Avogadro's number (6.022 × 10²³) bridges the gap between atomic mass units and grams.</p>
+        <p>This static simulation models how students would quickly interface with our mole calculator. The aesthetic avoids distracting visuals, highlighting purely the necessary computational formula alongside standard inputs to enforce repetitive memory retention of `n = m/M`.</p>
+        
+        <h3 style="margin: 2rem 0 1rem;">FAQ</h3>
+        <div class="faq-item">
+            <h4>Why is Molar Mass required?</h4>
+            <p>Different elements and compounds have different isotopic atomic weights. Without the unique molar mass (like 18 g/mol for water, or 44 g/mol for CO2), mass alone tells you nothing about the sheer number of particles.</p>
+        </div>
+        <div class="faq-item">
+            <h4>At what temperature and pressure does this hold true?</h4>
+            <p>The calculation of moles from mass is completely independent of temperature and pressure. Those factors only come into play when dealing with gas volumes (Ideal Gas Law, PV=nRT).</p>
+        </div>
+    </section>
+
+    <footer class="footer container reveal">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#3b82f6"/>
+                                <stop offset="1" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>JEE Tool Hub</span>
+                </a>
+                <p class="footer-tagline">Built for serious JEE aspirants.</p>
+                <div class="footer-socials">
+                    <a href="mailto:contact@jeetoolhub.com" class="social-icon" aria-label="Gmail">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <a href="../index.html">Home</a>
+                <a href="../tools.html">Tools Directory</a>
+            </div>
+            <div class="footer-feedback">
+                <h4>Help us improve</h4>
+                <button class="btn btn-secondary feedback-btn" onclick="openFeedbackModal()">Report a Bug / Feedback</button>
+                <p class="trust-text">Actively improving based on student feedback.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 JEE Tool Hub. Built with vanilla web technologies.</p>
+        </div>
+    </footer>
+</body>
+</html>
